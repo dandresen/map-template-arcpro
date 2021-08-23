@@ -1,0 +1,5 @@
+C:\Users\david\source\repos\MapLayoutFirst\MapLayoutFirst\bin\Debug\MapLayoutFirst.dll
+C:\Users\david\source\repos\MapLayoutFirst\MapLayoutFirst\bin\Debug\MapLayoutFirst.pdb
+C:\Users\david\source\repos\MapLayoutFirst\MapLayoutFirst\obj\x64\Debug\MapLayoutFirst.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\MapLayoutFirst\MapLayoutFirst\obj\x64\Debug\MapLayoutFirst.dll
+C:\Users\david\source\repos\MapLayoutFirst\MapLayoutFirst\obj\x64\Debug\MapLayoutFirst.pdb

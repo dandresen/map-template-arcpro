@@ -1,0 +1,40 @@
+﻿<ArcGIS defaultAssembly="MapLayoutFirst.dll" defaultNamespace="MapLayoutFirst" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Arc_Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{b3364843-a4b8-4330-a195-d991b0bcea37}" version="1.0" desktopVersion="2.8.29751">
+    <Name>MapLayoutFirst</Name>
+    <Description>MapLayoutFirst description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>david</Author>
+    <Company>Acme</Company>
+    <Date>8/22/2021 11:33:14 AM</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="MapLayoutFirst_Module" className="Module1" autoLoad="true" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="maplayoutfirst_tab1" caption="TxDOT Layouts" keytip="T1">
+          <group refID="maplayout_group1"/> 
+        </tab>
+      </tabs>
+      <groups>
+         <!--comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+		  <group id="maplayout_group1" caption="" appearsOnAddInTab="false" keytip="G1">
+			  <!--host controls within groups-->
+			  <button refID="maplayout_buildnewlayout" size="large" />
+		  </group>
+	  </groups>
+	  <controls>
+		  <!-- add your controls here -->
+		  <button id="maplayout_buildnewlayout" caption="llx17 Landscape Layout" keytip="B1"
+			className="BuildNewLayout" loadOnClick="true" smallImage="Images\AddInDesktop16.png" largeImage="Images\AddInDesktop32.png">
+			  <tooltip heading="Build New Layout">
+				  Create a new map layout with layout elements.<disabledText />
+			  </tooltip>
+		  </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
